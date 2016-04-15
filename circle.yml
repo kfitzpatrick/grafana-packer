@@ -23,7 +23,7 @@ test:
 deployment:
   develop:
     branch: master
-    owner: grafana
+    owner: kfitzpatrick
     commands:
       - ./deploy.sh
       - ./sign_packages.sh

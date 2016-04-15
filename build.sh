@@ -5,11 +5,13 @@
 GOPATH=/go
 REPO_PATH=$GOPATH/src/github.com/grafana/grafana
 
-mkdir -p /go/src/github.com/grafana
-cd /go/src/github.com/grafana
-git clone https://github.com/grafana/grafana.git
+REPO_OWNER=kfitzpatrick # was 'grafana'
 
-# go get -u -v github.com/grafana/grafana
+mkdir -p /go/src/github.com/$REPO_OWNER
+cd /go/src/github.com/$REPO_OWNER
+git clone https://github.com/$REPO_OWNER/grafana.git
+
+# go get -u -v github.com/grafana/$REPO_OWNER
 
 cd $REPO_PATH
 

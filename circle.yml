@@ -22,7 +22,7 @@ test:
 
 deployment:
   develop:
-    branch: master
+    branch: feature/influx-build
     owner: kfitzpatrick
     commands:
       - ./deploy.sh
